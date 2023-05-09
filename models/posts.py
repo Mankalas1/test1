@@ -11,3 +11,18 @@ posts = {
         "Description": "I love this city too!"
         }
 }
+<<<<<<< HEAD
+=======
+class Post():
+    def __init__(self, title, content):
+        self.title = title
+        self.description = content
+    def to_json(self):
+        return {
+            "title": self.title,
+            "description": self.description
+        }
+    def from_json(self, json):
+        self.title = json["title"]
+        self.description = json["description"]
+>>>>>>> ab8d357 (added code base to Develop branch)
